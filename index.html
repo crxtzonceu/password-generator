@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <section class="container">
+      <!-- Upper Child Section -->
+      <section class="upper-section">
+        <img src="img/lock.jpg" alt="">
+        <h1>Generate a <br> <span class="green">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+        <p class="length-box">Password Length: 
+          <button class="length-btn" id="add-btn" onclick="addLength()">+</button>
+          <span id="length">8</span> 
+          <button class="length-btn" id="minus-btn" onclick="minusLength()">-</button>
+        </p>
+        <p id="message-error" class="message"></p>
+        <button class="generate-btn" id="generate-btn" onclick="generatePassword()">Generate Password</button>
+
+      </section>
+
+      
+      <!-- Lower Child Section -->
+      
+      <section class="lower-section" id="show-lower">
+        <button class="result-btn" id="result-1"></button>
+        <button class="result-btn" id="result-2"></button>
+        <button class="result-btn" id="result-3"></button>
+        <button class="result-btn" id="result-4"></button>
+        <p class="click">Click to copy!</p>
+      </section>
+    </section>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>
